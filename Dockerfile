@@ -33,4 +33,4 @@ COPY --from=builder /app ./
 EXPOSE 3000
 
 # Claw3D arranca con npm run start para montar el gateway proxy y el servidor
-CMD ["node", "server/index.js", "--hostname", "0.0.0.0", "--port", "3000"]
+CMD ["node", "server/index.js", "--host", "0.0.0.0", "--port", "3000"]
